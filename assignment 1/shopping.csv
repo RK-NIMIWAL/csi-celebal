@@ -1,0 +1,316 @@
+order_id,customer_id,product_name,category,quantity,price,order_date,payment_method,city
+ORD48669,CUST4027,Water Bottle,Sports,2,19.99,2024-11-08,Credit Card,Pune
+ORD91987,CUST8699,Jacket,Clothing,1,59.99,2024-03-21,Net Banking,Kolkata
+ORD48669,CUST4027,Water Bottle,Sports,2,19.99,2024-11-08,Credit Card,Pune
+ORD91678,CUST7888,Python Basics,Books,3,24.99,2024-09-16,Debit Card,Hyderabad
+ORD18163,CUST8531,Sunscreen SPF50,Beauty,5,18.99,2024-04-16,Debit Card,Kolkata
+ORD75481,CUST8717,Face Serum,Beauty,5,22.99,2024-01-07,Debit Card,Kolkata
+ORD13280,CUST3290,Jump Rope,Sports,5,12.99,2024-04-23,Credit Card,Hyderabad
+ORD81057,CUST4300,Data Science 101,Books,4,34.99,2024-01-20,,Jaipur
+ORD68428,CUST2404,Phone Stand,Electronics,4,12.99,2024-08-26,Credit Card,Bengaluru
+ORD33405,CUST2894,Jump Rope,Sports,1,12.99,2024-02-25,Net Banking,Kolkata
+ORD13847,CUST6900,ML Handbook,Books,3,44.99,2024-09-25,Net Banking,Delhi
+ORD26315,CUST9507,ML Handbook,Books,4,44.99,2024-08-13,UPI,Jaipur
+ORD28327,CUST4366,Jacket,Clothing,1,59.99,2024-05-07,UPI,Mumbai
+ORD51795,CUST5060,Water Bottle,Sports,1,19.99,2024-05-23,Credit Card,Chennai
+ORD55508,CUST8532,Resistance Band,Sports,3,14.99,2024-02-05,UPI,Jaipur
+ORD17552,CUST7079,Resistance Band,Sports,4,14.99,2024-10-12,Cash on Delivery,Pune
+ORD63511,CUST8586,Jacket,Clothing,4,59.99,2024-04-04,Debit Card,Hyderabad
+ORD29127,CUST4203,USB Hub,Electronics,4,19.99,2024-05-21,Cash on Delivery,Hyderabad
+ORD87621,CUST4063,Lunch Box,Home & Kitchen,1,14.99,2024-12-26,Net Banking,Delhi
+ORD92802,CUST9444,Jeans,Clothing,1,,2024-08-22,UPI,Mumbai
+ORD86939,CUST2388,Phone Stand,Electronics,3,12.99,2024-08-22,Net Banking,Hyderabad
+ORD41722,CUST9907,Data Science 101,Books,4,34.99,2024-07-12,Cash on Delivery,Kolkata
+ORD43491,CUST2180,Clean Code,Books,1,29.99,2024-01-04,UPI,Chennai
+ORD48038,CUST9433,Lunch Box,Home & Kitchen,2,14.99,2024-03-22,Cash on Delivery,Chennai
+ORD47752,CUST7684,Lunch Box,Home & Kitchen,1,14.99,2024-01-15,Credit Card,Bengaluru
+ORD96096,CUST3885,Jacket,Clothing,5,59.99,2024-01-29,Debit Card,Kolkata
+ORD41604,CUST8840,Face Serum,Beauty,5,22.99,2024-06-19,Cash on Delivery,Bengaluru
+ORD44663,CUST8724,Yoga Mat,Sports,4,25.99,2024-07-07,Debit Card,Pune
+ORD65518,CUST3545,Hair Oil,Beauty,1,15.99,2024-11-23,Debit Card,Hyderabad
+ORD93816,CUST8179,Wireless Earbuds,Electronics,4,29.99,2024-07-05,Net Banking,Mumbai
+ORD89131,CUST6925,Python Basics,Books,4,24.99,2024-10-01,Net Banking,Hyderabad
+ORD64238,CUST9079,Coffee Mug,Home & Kitchen,5,9.99,2024-05-04,UPI,Bengaluru
+ORD57943,CUST8378,Blender,Home & Kitchen,1,79.99,2024-07-24,Net Banking,Hyderabad
+ORD91439,CUST2876,Jeans,Clothing,2,39.99,2024-08-30,Debit Card,Hyderabad
+ORD66420,CUST8586,Wireless Earbuds,Electronics,1,29.99,2024-05-12,Cash on Delivery,Chennai
+ORD15798,CUST6224,Lunch Box,Home & Kitchen,2,14.99,2024-10-03,Net Banking,Hyderabad
+ORD14705,CUST2646,Yoga Mat,Sports,2,25.99,2024-11-19,Credit Card,Delhi
+ORD36497,CUST8298,Water Bottle,Sports,2,19.99,2024-06-16,Net Banking,Jaipur
+ORD42044,CUST1185,Bluetooth Speaker,Electronics,1,49.99,2024-08-20,Debit Card,Bengaluru
+ORD70505,CUST5961,Sunscreen SPF50,Beauty,4,18.99,2024-05-29,Debit Card,Kolkata
+ORD56112,CUST4138,Hair Oil,Beauty,3,15.99,2024-06-05,Debit Card,Delhi
+ORD93748,CUST1319,Water Bottle,Sports,2,19.99,2024-07-10,Cash on Delivery,Mumbai
+ORD66047,CUST2892,Phone Stand,Electronics,,12.99,2024-09-02,Cash on Delivery,Hyderabad
+ORD18783,CUST9561,Bluetooth Speaker,Electronics,5,49.99,2024-07-22,Net Banking,Mumbai
+ORD26284,CUST3604,Sneakers,Clothing,4,69.99,2024-01-01,UPI,Bengaluru
+ORD94259,CUST6930,Knife Set,Home & Kitchen,3,49.99,2024-03-12,Cash on Delivery,Kolkata
+ORD99070,CUST6707,Water Bottle,Sports,3,19.99,2024-01-13,Debit Card,Delhi
+ORD74044,CUST1962,Hair Oil,Beauty,4,15.99,2024-03-27,Net Banking,Jaipur
+ORD15943,CUST7866,Phone Stand,Electronics,4,12.99,2024-02-29,Net Banking,Jaipur
+ORD32833,CUST7415,Lip Balm,Beauty,2,6.99,2024-12-06,Credit Card,Hyderabad
+ORD83259,CUST9331,Blender,Home & Kitchen,2,79.99,2024-12-09,Cash on Delivery,Delhi
+ORD82869,CUST3141,Sunscreen SPF50,Beauty,1,18.99,2024-08-24,Debit Card,Mumbai
+ORD26074,CUST9882,T-Shirt,Clothing,4,15.99,2024-03-29,Credit Card,Pune
+ORD34901,CUST1062,Blender,Home & Kitchen,3,79.99,2024-06-01,UPI,Jaipur
+ORD79066,CUST3248,Lip Balm,Beauty,1,6.99,2024-04-22,Debit Card,
+ORD38361,CUST4727,Hair Oil,Beauty,3,15.99,2024-10-28,UPI,Delhi
+ORD52081,CUST1601,Face Serum,Beauty,2,22.99,2024-06-17,Net Banking,Kolkata
+ORD67104,CUST9363,Resistance Band,Sports,5,14.99,2024-02-10,Credit Card,Pune
+ORD15720,CUST3068,ML Handbook,Books,4,44.99,2024-07-16,Credit Card,Bengaluru
+ORD97819,CUST6119,Bluetooth Speaker,Electronics,3,49.99,2024-12-06,Net Banking,Mumbai
+ORD19567,CUST7806,Wireless Earbuds,Electronics,1,29.99,2024-05-14,Net Banking,Kolkata
+ORD97153,CUST6279,Knife Set,Home & Kitchen,5,49.99,2024-10-18,Cash on Delivery,
+ORD63843,CUST3981,Coffee Mug,Home & Kitchen,2,9.99,2024-06-11,Net Banking,Pune
+ORD91620,CUST1391,Sneakers,Clothing,3,69.99,2024-10-29,Cash on Delivery,Chennai
+ORD49378,CUST6339,Data Science 101,Books,4,34.99,2024-06-09,Debit Card,Jaipur
+ORD50880,CUST1732,ML Handbook,Books,2,44.99,2024-09-23,UPI,Jaipur
+ORD97012,CUST2193,Lip Balm,Beauty,1,6.99,2024-04-30,Cash on Delivery,Mumbai
+ORD77582,CUST8511,Lip Balm,Beauty,3,6.99,2024-08-20,Credit Card,
+ORD52081,CUST1601,Face Serum,Beauty,2,22.99,2024-06-17,Net Banking,Kolkata
+ORD31299,CUST7267,Sneakers,Clothing,1,69.99,2024-04-01,Credit Card,Chennai
+ORD37168,CUST9899,Hair Oil,Beauty,3,15.99,2024-09-02,Net Banking,Hyderabad
+ORD27103,CUST2188,Data Science 101,Books,3,,2024-01-31,UPI,Delhi
+ORD75390,CUST1319,Lunch Box,Home & Kitchen,1,14.99,2024-02-14,Net Banking,Chennai
+ORD57425,CUST3538,Phone Stand,Electronics,3,12.99,2024-04-02,Debit Card,Chennai
+ORD77889,CUST6198,Coffee Mug,Home & Kitchen,5,9.99,2024-05-07,Net Banking,Jaipur
+ORD70012,CUST3230,USB Hub,Electronics,3,19.99,2024-01-04,Cash on Delivery,Pune
+ORD91560,CUST1823,Yoga Mat,Sports,,25.99,2024-10-30,Debit Card,Bengaluru
+ORD82070,CUST9341,Python Basics,Books,2,24.99,2024-02-19,Debit Card,Pune
+ORD67560,CUST8078,Bluetooth Speaker,Electronics,3,49.99,2024-12-24,Credit Card,Jaipur
+ORD85674,CUST5554,T-Shirt,Clothing,1,15.99,2024-12-04,Cash on Delivery,Chennai
+ORD72424,CUST3832,Python Basics,Books,4,24.99,2024-01-18,Cash on Delivery,Bengaluru
+ORD19963,CUST8075,ML Handbook,Books,3,44.99,2024-01-16,Cash on Delivery,Chennai
+ORD20198,CUST4435,Jacket,Clothing,3,59.99,2024-03-26,UPI,Pune
+ORD75410,CUST4279,Resistance Band,Sports,5,14.99,2024-03-01,Cash on Delivery,Hyderabad
+ORD31465,CUST2245,Python Basics,Books,5,24.99,2024-01-14,Debit Card,Kolkata
+ORD30052,CUST5397,Knife Set,Home & Kitchen,5,49.99,2024-11-29,Net Banking,Jaipur
+ORD44782,CUST8405,USB Hub,Electronics,4,19.99,2024-09-26,Credit Card,Pune
+ORD32650,CUST5835,Data Science 101,Books,2,34.99,2024-05-20,Debit Card,
+ORD69446,CUST6658,Wireless Earbuds,Electronics,2,29.99,2024-08-13,UPI,Bengaluru
+ORD22924,CUST5272,Hair Oil,Beauty,3,15.99,2024-04-14,Credit Card,Chennai
+ORD48469,CUST5889,Knife Set,Home & Kitchen,4,49.99,2024-01-02,Credit Card,Bengaluru
+ORD31473,CUST2934,Blender,Home & Kitchen,5,79.99,2024-09-21,UPI,Bengaluru
+ORD22224,CUST5345,Jeans,Clothing,4,39.99,2024-09-05,Cash on Delivery,Bengaluru
+ORD64165,CUST3146,USB Hub,Electronics,5,19.99,2024-07-04,Net Banking,Mumbai
+ORD69638,CUST1998,ML Handbook,Books,5,44.99,2024-12-04,Net Banking,Mumbai
+ORD51507,CUST8061,Python Basics,Books,1,24.99,2024-01-03,Debit Card,Delhi
+ORD71344,CUST6523,Data Science 101,Books,1,34.99,2024-06-18,,Bengaluru
+ORD78674,CUST9285,Wireless Earbuds,Electronics,1,29.99,2024-01-04,,Bengaluru
+ORD93810,CUST1488,Wireless Earbuds,Electronics,3,29.99,2024-05-05,Credit Card,Delhi
+ORD14207,CUST7482,ML Handbook,Books,3,44.99,2024-02-03,Cash on Delivery,Pune
+ORD21955,CUST8408,Sunscreen SPF50,Beauty,3,18.99,2024-07-21,Cash on Delivery,Bengaluru
+ORD55015,CUST3600,Face Serum,Beauty,5,22.99,2024-11-26,Net Banking,Jaipur
+ORD14222,CUST5009,Hair Oil,Beauty,5,15.99,2024-01-09,Credit Card,Jaipur
+ORD75836,CUST2225,Jump Rope,Sports,1,12.99,2024-08-13,Debit Card,
+ORD68008,CUST9540,Resistance Band,Sports,5,14.99,2024-08-16,UPI,Hyderabad
+ORD23446,CUST7565,Phone Stand,Electronics,4,12.99,2024-09-02,Credit Card,Jaipur
+ORD88104,CUST2827,Blender,Home & Kitchen,5,79.99,2024-01-06,UPI,Hyderabad
+ORD44282,CUST7021,Lip Balm,Beauty,2,6.99,2024-02-01,UPI,Hyderabad
+ORD98501,CUST9565,Sneakers,Clothing,1,69.99,2024-10-18,Net Banking,Kolkata
+ORD16624,CUST5333,ML Handbook,Books,5,44.99,2024-11-30,Debit Card,
+ORD30631,CUST8259,Clean Code,Books,3,29.99,2024-10-17,UPI,Mumbai
+ORD69692,CUST3881,Knife Set,Home & Kitchen,4,49.99,2024-09-10,Debit Card,Delhi
+ORD10395,CUST8734,Sunscreen SPF50,Beauty,5,18.99,2024-02-07,Credit Card,Mumbai
+ORD48566,CUST6419,Sneakers,Clothing,2,69.99,2024-06-05,Net Banking,Pune
+ORD62044,CUST5743,Face Serum,Beauty,4,22.99,2024-01-10,Cash on Delivery,Kolkata
+ORD41005,CUST9064,Jump Rope,Sports,3,,2024-10-29,Debit Card,Bengaluru
+ORD47243,CUST6072,Data Science 101,Books,3,34.99,2024-02-11,Credit Card,Kolkata
+ORD62260,CUST1829,Jacket,Clothing,5,59.99,2024-10-14,Credit Card,Jaipur
+ORD62550,CUST5979,Bluetooth Speaker,Electronics,3,49.99,2024-06-08,Net Banking,
+ORD80678,CUST8651,Sneakers,Clothing,2,69.99,2024-08-30,Cash on Delivery,Kolkata
+ORD65296,CUST1241,Jacket,Clothing,4,59.99,2024-05-07,Net Banking,Delhi
+ORD47498,CUST3356,Jump Rope,Sports,4,12.99,2024-05-15,Cash on Delivery,Mumbai
+ORD96761,CUST8972,Lunch Box,Home & Kitchen,5,14.99,2024-08-14,UPI,Pune
+ORD31910,CUST6238,Jeans,Clothing,2,39.99,2024-01-22,UPI,Bengaluru
+ORD87607,CUST1672,Sunscreen SPF50,Beauty,1,18.99,2024-12-22,Net Banking,Delhi
+ORD14159,CUST8348,ML Handbook,Books,2,44.99,2024-03-10,Cash on Delivery,Kolkata
+ORD65723,CUST5728,USB Hub,Electronics,2,19.99,2024-05-16,Net Banking,Hyderabad
+ORD26011,CUST4362,Coffee Mug,Home & Kitchen,2,9.99,2024-11-24,Debit Card,Pune
+ORD38266,CUST9782,Sneakers,Clothing,1,69.99,2024-05-27,Cash on Delivery,Jaipur
+ORD88282,CUST7731,Knife Set,Home & Kitchen,2,49.99,2024-04-02,Credit Card,Bengaluru
+ORD12540,CUST1333,Face Serum,Beauty,3,22.99,2024-04-24,Debit Card,Mumbai
+ORD28035,CUST5193,Phone Stand,Electronics,4,12.99,2024-12-22,Credit Card,Mumbai
+ORD17100,CUST3296,Face Serum,Beauty,1,22.99,2024-07-25,Cash on Delivery,Chennai
+ORD24662,CUST3060,Clean Code,Books,2,29.99,2024-01-30,Net Banking,Jaipur
+ORD99037,CUST5055,USB Hub,Electronics,4,19.99,2024-01-31,UPI,Bengaluru
+ORD57795,CUST4878,Phone Stand,Electronics,2,12.99,2024-12-15,Debit Card,Kolkata
+ORD32740,CUST6295,Water Bottle,Sports,1,19.99,2024-03-31,Net Banking,Jaipur
+ORD32439,CUST5336,Lip Balm,Beauty,,6.99,2024-01-22,Net Banking,
+ORD57303,CUST9612,Jump Rope,Sports,4,12.99,2024-10-09,Cash on Delivery,Kolkata
+ORD70068,CUST5669,Yoga Mat,Sports,1,25.99,2024-10-02,UPI,Delhi
+ORD84177,CUST3344,Sunscreen SPF50,Beauty,2,18.99,2024-03-30,Net Banking,Chennai
+ORD59767,CUST4505,Blender,Home & Kitchen,2,79.99,2024-05-28,Cash on Delivery,Jaipur
+ORD51232,CUST7809,Coffee Mug,Home & Kitchen,3,9.99,2024-01-05,Cash on Delivery,Jaipur
+ORD25386,CUST4390,Jeans,Clothing,5,39.99,2024-12-18,Debit Card,Bengaluru
+ORD35969,CUST3110,Blender,Home & Kitchen,1,79.99,2024-10-25,Cash on Delivery,Delhi
+ORD22119,CUST4555,Water Bottle,Sports,1,19.99,2024-05-17,Net Banking,
+ORD51104,CUST2113,Wireless Earbuds,Electronics,5,29.99,2024-09-01,Credit Card,Delhi
+ORD40433,CUST2210,Blender,Home & Kitchen,4,79.99,2024-05-10,Debit Card,Hyderabad
+ORD22624,CUST8520,Water Bottle,Sports,2,19.99,2024-04-08,Cash on Delivery,Kolkata
+ORD15577,CUST1539,Jeans,Clothing,5,39.99,2024-08-31,Net Banking,Hyderabad
+ORD36485,CUST4697,Jump Rope,Sports,5,12.99,2024-12-22,Net Banking,Chennai
+ORD15075,CUST4164,Knife Set,Home & Kitchen,2,49.99,2024-08-23,,Chennai
+ORD70521,CUST7299,Coffee Mug,Home & Kitchen,1,9.99,2024-07-07,Net Banking,Delhi
+ORD51467,CUST1152,Data Science 101,Books,3,34.99,2024-05-02,Credit Card,Jaipur
+ORD25084,CUST7985,Phone Stand,Electronics,1,12.99,2024-12-12,UPI,Bengaluru
+ORD21128,CUST4879,Yoga Mat,Sports,5,25.99,2024-03-09,Debit Card,Mumbai
+ORD44959,CUST5843,Bluetooth Speaker,Electronics,1,49.99,2024-08-08,UPI,Pune
+ORD73517,CUST3267,Sunscreen SPF50,Beauty,3,18.99,2024-08-13,Credit Card,Pune
+ORD58967,CUST6198,Hair Oil,Beauty,5,15.99,2024-02-21,Cash on Delivery,Kolkata
+ORD57749,CUST4178,Sunscreen SPF50,Beauty,4,18.99,2024-11-08,Cash on Delivery,Chennai
+ORD25095,CUST1228,Coffee Mug,Home & Kitchen,2,9.99,2024-04-25,Cash on Delivery,Pune
+ORD45916,CUST8032,Phone Stand,Electronics,3,12.99,2024-02-12,Debit Card,Kolkata
+ORD12154,CUST9576,Sunscreen SPF50,Beauty,2,18.99,2024-05-29,Credit Card,Kolkata
+ORD33834,CUST4130,Knife Set,Home & Kitchen,3,49.99,2024-05-12,Net Banking,Hyderabad
+ORD59986,CUST1803,Jump Rope,Sports,5,12.99,2024-05-31,Net Banking,Kolkata
+ORD59479,CUST1056,Coffee Mug,Home & Kitchen,5,9.99,2024-03-09,Debit Card,Kolkata
+ORD68188,CUST4048,USB Hub,Electronics,5,19.99,2024-07-06,,Delhi
+ORD22924,CUST5272,Hair Oil,Beauty,3,15.99,2024-04-14,Credit Card,Chennai
+ORD38746,CUST7252,Sneakers,Clothing,1,69.99,2024-01-25,Cash on Delivery,Kolkata
+ORD80807,CUST3854,Data Science 101,Books,1,34.99,2024-12-04,Credit Card,Chennai
+ORD98094,CUST7286,Jacket,Clothing,1,59.99,2024-05-02,Debit Card,Kolkata
+ORD56090,CUST4705,USB Hub,Electronics,2,19.99,2024-12-02,UPI,Pune
+ORD92050,CUST7821,Hair Oil,Beauty,5,15.99,2024-09-10,UPI,Kolkata
+ORD22217,CUST7807,T-Shirt,Clothing,4,15.99,2024-03-01,UPI,Hyderabad
+ORD87860,CUST4367,Resistance Band,Sports,1,14.99,2024-08-08,UPI,Bengaluru
+ORD83259,CUST9331,Blender,Home & Kitchen,2,79.99,2024-12-09,Cash on Delivery,Delhi
+ORD42087,CUST4752,Sneakers,Clothing,4,69.99,2024-05-18,Credit Card,Pune
+ORD60488,CUST6409,Water Bottle,Sports,,19.99,2024-01-23,Credit Card,Chennai
+ORD25806,CUST3246,Knife Set,Home & Kitchen,4,49.99,2024-02-06,UPI,Delhi
+ORD54548,CUST9824,Jump Rope,Sports,1,12.99,2024-05-24,Cash on Delivery,Jaipur
+ORD84277,CUST4803,Blender,Home & Kitchen,4,79.99,2024-03-12,Cash on Delivery,Pune
+ORD48652,CUST7779,Lunch Box,Home & Kitchen,1,14.99,2024-12-25,Debit Card,Chennai
+ORD98635,CUST7600,Lunch Box,Home & Kitchen,2,14.99,2024-10-22,Credit Card,Delhi
+ORD15720,CUST3068,ML Handbook,Books,4,44.99,2024-07-16,Credit Card,Bengaluru
+ORD57301,CUST9042,Jacket,Clothing,1,59.99,2024-12-28,Debit Card,Hyderabad
+ORD48230,CUST3230,Clean Code,Books,4,29.99,2024-12-24,Debit Card,Chennai
+ORD70946,CUST9445,Lunch Box,Home & Kitchen,2,14.99,2024-09-18,UPI,Bengaluru
+ORD44099,CUST8705,Blender,Home & Kitchen,2,79.99,2024-08-20,Credit Card,Kolkata
+ORD69770,CUST9719,Python Basics,Books,5,24.99,2024-11-22,,Jaipur
+ORD80305,CUST1948,ML Handbook,Books,5,44.99,2024-11-20,Debit Card,Hyderabad
+ORD65448,CUST4065,Sneakers,Clothing,5,69.99,2024-12-21,Debit Card,Bengaluru
+ORD85047,CUST8726,Face Serum,Beauty,2,22.99,2024-01-10,Net Banking,Chennai
+ORD48175,CUST4241,USB Hub,Electronics,3,19.99,2024-12-27,Net Banking,Chennai
+ORD80143,CUST5742,Face Serum,Beauty,2,22.99,2024-08-01,Debit Card,Kolkata
+ORD52179,CUST1752,Sneakers,Clothing,3,69.99,2024-05-18,Net Banking,Mumbai
+ORD62610,CUST3290,Yoga Mat,Sports,1,25.99,2024-01-20,Net Banking,Jaipur
+ORD22055,CUST7990,Python Basics,Books,1,24.99,2024-08-24,Cash on Delivery,Kolkata
+ORD67898,CUST4886,Clean Code,Books,4,29.99,2024-12-19,Credit Card,Kolkata
+ORD48654,CUST6536,Phone Stand,Electronics,3,12.99,2024-02-23,Credit Card,Delhi
+ORD60134,CUST1427,Lip Balm,Beauty,4,6.99,2024-10-05,Debit Card,Pune
+ORD25129,CUST1832,USB Hub,Electronics,3,19.99,2024-05-24,UPI,Hyderabad
+ORD80143,CUST5742,Face Serum,Beauty,2,22.99,2024-08-01,Debit Card,Kolkata
+ORD73242,CUST7798,Knife Set,Home & Kitchen,4,49.99,2024-10-09,UPI,Bengaluru
+ORD69614,CUST8569,Phone Stand,Electronics,3,12.99,2024-06-14,Net Banking,Mumbai
+ORD69942,CUST8231,Resistance Band,Sports,5,14.99,2024-09-18,Credit Card,Pune
+ORD26912,CUST5653,Coffee Mug,Home & Kitchen,1,9.99,2024-09-22,Net Banking,Chennai
+ORD93209,CUST6533,Lip Balm,Beauty,1,6.99,2024-09-30,UPI,Jaipur
+ORD50173,CUST5498,Lunch Box,Home & Kitchen,2,14.99,2024-12-19,Cash on Delivery,Pune
+ORD86983,CUST4559,Sunscreen SPF50,Beauty,4,18.99,2024-12-01,UPI,Hyderabad
+ORD79878,CUST5735,Clean Code,Books,3,29.99,2024-11-08,UPI,Hyderabad
+ORD58213,CUST3267,Hair Oil,Beauty,4,15.99,2024-05-24,Net Banking,Bengaluru
+ORD22280,CUST5557,Jeans,Clothing,5,,2024-11-04,Net Banking,Kolkata
+ORD30676,CUST5333,Blender,Home & Kitchen,5,79.99,2024-11-30,Debit Card,Delhi
+ORD48058,CUST1430,Data Science 101,Books,2,34.99,2024-07-04,Cash on Delivery,Bengaluru
+ORD84381,CUST6425,USB Hub,Electronics,5,19.99,2024-06-11,Debit Card,Delhi
+ORD91034,CUST1331,Resistance Band,Sports,1,14.99,2024-07-21,UPI,Jaipur
+ORD34345,CUST7383,Hair Oil,Beauty,1,15.99,2024-11-12,Debit Card,Hyderabad
+ORD61964,CUST3392,Jump Rope,Sports,2,12.99,2024-07-16,UPI,
+ORD93616,CUST3587,T-Shirt,Clothing,1,15.99,2024-07-30,,Bengaluru
+ORD54548,CUST9824,Jump Rope,Sports,1,12.99,2024-05-24,Cash on Delivery,Jaipur
+ORD92210,CUST6085,Data Science 101,Books,4,34.99,2024-02-04,Credit Card,Mumbai
+ORD52245,CUST6325,T-Shirt,Clothing,3,15.99,2024-08-18,Cash on Delivery,Kolkata
+ORD81611,CUST8193,Sneakers,Clothing,1,69.99,2024-11-30,Credit Card,Jaipur
+ORD92998,CUST4232,USB Hub,Electronics,3,19.99,2024-06-28,UPI,Chennai
+ORD92242,CUST3877,Face Serum,Beauty,3,,2024-08-13,Cash on Delivery,Hyderabad
+ORD59290,CUST1440,ML Handbook,Books,3,44.99,2024-02-28,Net Banking,Bengaluru
+ORD73242,CUST7798,Knife Set,Home & Kitchen,4,49.99,2024-10-09,UPI,Bengaluru
+ORD48566,CUST6419,Sneakers,Clothing,2,69.99,2024-06-05,Net Banking,Pune
+ORD32962,CUST6460,Lunch Box,Home & Kitchen,3,14.99,2024-04-02,Cash on Delivery,Delhi
+ORD52987,CUST9721,Jump Rope,Sports,2,12.99,2024-07-20,Net Banking,Pune
+ORD90560,CUST9806,Jeans,Clothing,2,39.99,2024-09-01,Cash on Delivery,Kolkata
+ORD97044,CUST9281,Jeans,Clothing,5,39.99,2024-02-11,Net Banking,Delhi
+ORD73483,CUST7730,Clean Code,Books,5,29.99,2024-10-05,Debit Card,Chennai
+ORD64997,CUST2654,Bluetooth Speaker,Electronics,2,49.99,2024-03-16,Net Banking,Delhi
+ORD95344,CUST5873,Sneakers,Clothing,5,,2024-11-23,Cash on Delivery,Hyderabad
+ORD78494,CUST4404,Lunch Box,Home & Kitchen,4,14.99,2024-06-01,Credit Card,Mumbai
+ORD21221,CUST2524,Sneakers,Clothing,4,69.99,2024-10-11,Credit Card,Jaipur
+ORD95915,CUST6629,Wireless Earbuds,Electronics,1,29.99,2024-04-19,,Jaipur
+ORD84055,CUST7179,Jeans,Clothing,3,39.99,2024-12-16,Cash on Delivery,Mumbai
+ORD20336,CUST3526,Data Science 101,Books,5,34.99,2024-05-20,Net Banking,Bengaluru
+ORD29769,CUST7883,Sneakers,Clothing,2,69.99,2024-12-27,Debit Card,Jaipur
+ORD74205,CUST8775,Lip Balm,Beauty,4,6.99,2024-01-09,Credit Card,Hyderabad
+ORD67898,CUST4886,Clean Code,Books,4,29.99,2024-12-19,Credit Card,Kolkata
+ORD64266,CUST1547,Lunch Box,Home & Kitchen,3,14.99,2024-10-06,Credit Card,Chennai
+ORD70648,CUST2695,Yoga Mat,Sports,4,25.99,2024-10-19,Cash on Delivery,Bengaluru
+ORD10851,CUST6635,Sneakers,Clothing,3,69.99,2024-05-22,UPI,Delhi
+ORD63334,CUST4804,Hair Oil,Beauty,4,15.99,2024-11-29,Credit Card,Mumbai
+ORD72835,CUST4350,Jacket,Clothing,3,59.99,2024-01-08,Net Banking,Jaipur
+ORD60164,CUST7745,Jeans,Clothing,1,39.99,2024-09-28,Debit Card,Pune
+ORD82523,CUST5216,Resistance Band,Sports,3,14.99,2024-03-19,UPI,Chennai
+ORD14818,CUST6432,Python Basics,Books,1,24.99,2024-05-07,Cash on Delivery,Mumbai
+ORD69429,CUST9751,Lip Balm,Beauty,2,6.99,2024-07-08,Debit Card,Delhi
+ORD42768,CUST5469,Bluetooth Speaker,Electronics,3,49.99,2024-10-10,Debit Card,Delhi
+ORD54424,CUST2099,Lunch Box,Home & Kitchen,4,14.99,2024-02-18,Cash on Delivery,Bengaluru
+ORD44803,CUST1517,Sunscreen SPF50,Beauty,1,18.99,2024-10-25,Debit Card,Kolkata
+ORD14705,CUST2646,Yoga Mat,Sports,2,25.99,2024-11-19,Credit Card,Delhi
+ORD21957,CUST6400,Wireless Earbuds,Electronics,4,29.99,2024-02-19,Net Banking,Mumbai
+ORD25096,CUST4986,Coffee Mug,Home & Kitchen,3,9.99,2024-03-28,Credit Card,Pune
+ORD43491,CUST2180,Clean Code,Books,1,29.99,2024-01-04,UPI,Chennai
+ORD33777,CUST6585,Sneakers,Clothing,1,69.99,2024-03-13,Cash on Delivery,Chennai
+ORD86638,CUST8404,USB Hub,Electronics,1,19.99,2024-03-25,Debit Card,Pune
+ORD42707,CUST3725,Face Serum,Beauty,3,22.99,2024-05-11,Cash on Delivery,
+ORD61987,CUST8635,Jacket,Clothing,3,59.99,2024-07-13,Cash on Delivery,Pune
+ORD97574,CUST4860,ML Handbook,Books,5,44.99,2024-04-26,Cash on Delivery,Kolkata
+ORD14561,CUST7095,T-Shirt,Clothing,2,15.99,2024-11-26,UPI,Bengaluru
+ORD81582,CUST3091,Water Bottle,Sports,4,19.99,2024-04-22,Cash on Delivery,Kolkata
+ORD68893,CUST1872,Water Bottle,Sports,4,19.99,2024-02-16,Cash on Delivery,Pune
+ORD68153,CUST7751,Jacket,Clothing,1,59.99,2024-01-24,Net Banking,Kolkata
+ORD14910,CUST9261,Phone Stand,Electronics,5,12.99,2024-11-04,Debit Card,Jaipur
+ORD28430,CUST1187,Blender,Home & Kitchen,2,79.99,2024-01-04,Net Banking,Pune
+ORD81737,CUST1266,Water Bottle,Sports,5,19.99,2024-09-05,Cash on Delivery,Mumbai
+ORD36318,CUST6549,Jacket,Clothing,5,59.99,2024-09-13,UPI,Jaipur
+ORD57945,CUST7431,Data Science 101,Books,4,34.99,2024-02-28,Net Banking,Pune
+ORD77862,CUST4949,Water Bottle,Sports,4,19.99,2024-05-31,Credit Card,Chennai
+ORD15798,CUST6224,Lunch Box,Home & Kitchen,2,14.99,2024-10-03,Net Banking,Hyderabad
+ORD57696,CUST7333,Clean Code,Books,4,29.99,2024-07-28,Credit Card,Pune
+ORD62296,CUST4608,Lip Balm,Beauty,4,6.99,2024-09-21,Debit Card,Mumbai
+ORD74454,CUST4697,Wireless Earbuds,Electronics,2,29.99,2024-03-17,Cash on Delivery,Chennai
+ORD82305,CUST2753,Coffee Mug,Home & Kitchen,1,9.99,2024-09-28,Debit Card,Kolkata
+ORD17266,CUST1042,Knife Set,Home & Kitchen,3,49.99,2024-03-21,Net Banking,Delhi
+ORD17780,CUST9428,Jump Rope,Sports,5,12.99,2024-05-23,UPI,Hyderabad
+ORD12979,CUST2848,ML Handbook,Books,5,44.99,2024-08-05,Debit Card,Pune
+ORD62196,CUST5476,Resistance Band,Sports,3,14.99,2024-01-19,UPI,Mumbai
+ORD76039,CUST2768,T-Shirt,Clothing,5,15.99,2024-06-03,Cash on Delivery,Jaipur
+ORD17292,CUST5169,Knife Set,Home & Kitchen,5,49.99,2024-07-31,Cash on Delivery,Hyderabad
+ORD70068,CUST5669,Yoga Mat,Sports,1,25.99,2024-10-02,UPI,Delhi
+ORD68176,CUST3755,Knife Set,Home & Kitchen,1,,2024-10-16,UPI,Hyderabad
+ORD10942,CUST4510,Wireless Earbuds,Electronics,2,29.99,2024-02-04,Cash on Delivery,Chennai
+ORD20114,CUST3147,Python Basics,Books,5,24.99,2024-10-03,Net Banking,
+ORD83519,CUST6050,Wireless Earbuds,Electronics,1,29.99,2024-12-19,Credit Card,Bengaluru
+ORD74260,CUST9692,Hair Oil,Beauty,1,15.99,2024-02-11,Net Banking,Pune
+ORD18992,CUST3129,Water Bottle,Sports,5,19.99,2024-04-20,Debit Card,Mumbai
+ORD89482,CUST2591,Hair Oil,Beauty,3,15.99,2024-04-27,Debit Card,Hyderabad
+ORD26828,CUST6107,Hair Oil,Beauty,5,15.99,2024-03-25,Debit Card,Chennai
+ORD50416,CUST4056,Lunch Box,Home & Kitchen,4,14.99,2024-12-04,UPI,Pune
+ORD50410,CUST3430,Blender,Home & Kitchen,1,79.99,2024-02-16,UPI,Mumbai
+ORD52247,CUST1659,Jump Rope,Sports,1,12.99,2024-02-16,UPI,Mumbai
+ORD82443,CUST9653,Coffee Mug,Home & Kitchen,1,9.99,2024-12-25,Credit Card,Pune
+ORD15772,CUST4678,USB Hub,Electronics,1,19.99,2024-08-29,Cash on Delivery,Mumbai
+ORD71186,CUST1797,Blender,Home & Kitchen,4,79.99,2024-01-12,UPI,Chennai
+ORD62227,CUST5279,Clean Code,Books,1,29.99,2024-05-22,Credit Card,Pune
+ORD71537,CUST9864,Clean Code,Books,5,29.99,2024-12-20,Cash on Delivery,Kolkata
+ORD40539,CUST4902,Jump Rope,Sports,1,,2024-06-20,Net Banking,Hyderabad
+ORD22097,CUST8007,Hair Oil,Beauty,3,,2024-01-23,Cash on Delivery,Hyderabad
+ORD85690,CUST3869,Jump Rope,Sports,2,12.99,2024-06-03,Credit Card,Kolkata
+ORD65026,CUST8511,Coffee Mug,Home & Kitchen,2,9.99,2024-12-30,UPI,Kolkata
+ORD90750,CUST6152,Hair Oil,Beauty,2,15.99,2024-02-14,Cash on Delivery,Kolkata
+ORD33508,CUST4939,Python Basics,Books,2,24.99,2024-10-27,Net Banking,Delhi
+ORD66244,CUST1100,Yoga Mat,Sports,5,25.99,2024-12-02,UPI,Hyderabad
+ORD70562,CUST8365,Sneakers,Clothing,2,69.99,2024-04-05,Debit Card,
+ORD68115,CUST4109,Knife Set,Home & Kitchen,3,49.99,2024-02-20,UPI,Pune
+ORD61049,CUST9818,Yoga Mat,Sports,5,25.99,2024-07-13,Cash on Delivery,Kolkata
+ORD33405,CUST2894,Jump Rope,Sports,1,12.99,2024-02-25,Net Banking,Kolkata
+ORD68830,CUST5781,Resistance Band,Sports,1,14.99,2024-01-14,Credit Card,Pune
+ORD57265,CUST6649,Wireless Earbuds,Electronics,4,29.99,2024-08-28,Credit Card,Mumbai

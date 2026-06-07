@@ -123,6 +123,3 @@ This enables multi-dimensional analysis such as:
 4. **Optimize Product Mix:** Technology products drive the highest individual order values — ensure promotional visibility.
 5. **Regional Strategy:** Analyze regional performance differences to allocate marketing budgets effectively.
 
----
-
-*Generated as part of CSI Celebal Internship — Week 3 Assignment*

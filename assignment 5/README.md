@@ -1,7 +1,6 @@
 # Apache Spark Basics — Assignment 5
 
-> **CSI Celebal Technologies | Junior Data Engineer Internship**
-> Learn the fundamentals of Apache Spark and perform data cleaning, transformation, and analysis using PySpark DataFrames.
+> **CSI Celebal Technologies**
 
 ---
 

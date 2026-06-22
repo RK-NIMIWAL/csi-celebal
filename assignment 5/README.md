@@ -183,4 +183,4 @@ Output saved to `output/results/` and `output/detailed_results/`.
 
 ## 📄 License
 
-This project is submitted as part of the CSI Celebal Technologies Summer Internship 2025.
+This project is submitted as part of the CSI Celebal Technologies Summer Internship 2026.

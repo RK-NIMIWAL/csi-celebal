@@ -1,0 +1,5 @@
+department,employee_count,avg_salary,total_salary,avg_rating,total_bonus,min_salary,max_salary
+Finance,7,88285.71,618000.0,4.43,27447.0,78000,98000
+Engineering,9,80111.11,721000.0,4.34,31400.0,70000,95000
+Marketing,7,62486.71,437407.0,3.77,16553.87,56000,73407
+HR,6,58734.5,352407.0,3.75,13221.06,53000,73407

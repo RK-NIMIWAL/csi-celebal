@@ -1,16 +1,4 @@
-"""
-===============================================================================
-Assignment 6 — Apache Spark: Architecture & Efficient Data Processing
-===============================================================================
-Author  : Junior Data Engineer Intern
-Date    : 2026-06-29
-Objective:
-    Understand Spark architecture and perform efficient data processing using
-    transformations, filtering, schema handling, and optimized file formats.
-===============================================================================
-"""
 
-# ── 0. Imports ───────────────────────────────────────────────────────────────
 from pyspark.sql import SparkSession
 from pyspark.sql.types import (
     StructType, StructField, IntegerType, StringType,
@@ -43,66 +31,13 @@ print(f"Master         : {spark.sparkContext.master}")
 print(f"Default Parallelism : {spark.sparkContext.defaultParallelism}")
 
 # ╔═══════════════════════════════════════════════════════════════════════════╗
-# ║  SECTION A — SPARK ARCHITECTURE OVERVIEW (printed insights)             ║
-# ╚═══════════════════════════════════════════════════════════════════════════╝
-print("\n" + "=" * 80)
-print("SECTION A: Spark Architecture — Key Concepts")
-print("=" * 80)
-
-architecture_notes = """
-┌──────────────────────────────────────────────────────────────────────────┐
-│                    APACHE SPARK ARCHITECTURE                            │
-├──────────────────────────────────────────────────────────────────────────┤
-│                                                                          │
-│  1. DRIVER PROGRAM                                                       │
-│     • The main process that runs the user's application code.            │
-│     • Creates the SparkContext / SparkSession.                           │
-│     • Converts user code into a DAG (Directed Acyclic Graph) of stages. │
-│     • Schedules tasks on executors via the Cluster Manager.              │
-│                                                                          │
-│  2. CLUSTER MANAGER                                                      │
-│     • Allocates resources (CPU, memory) across the cluster.              │
-│     • Types: Standalone, YARN, Mesos, Kubernetes.                        │
-│     • Acts as a mediator between Driver and Worker nodes.                │
-│                                                                          │
-│  3. EXECUTORS                                                            │
-│     • JVM processes running on worker nodes.                             │
-│     • Execute tasks assigned by the Driver.                              │
-│     • Store intermediate data in memory/disk for caching.                │
-│     • Each executor has dedicated cores and memory.                      │
-│                                                                          │
-│  EXECUTION MODES                                                         │
-│     • Local Mode   : Driver + Executors on one machine (development).    │
-│     • Client Mode  : Driver on client machine, Executors on cluster.     │
-│     • Cluster Mode : Driver + Executors both run on the cluster.         │
-│                                                                          │
-│  LAZY EVALUATION & DAG                                                   │
-│     • Transformations (map, filter, select) are lazy — not executed      │
-│       immediately. Spark builds a logical plan (lineage graph).          │
-│     • Actions (show, count, collect, write) trigger actual execution.    │
-│     • The DAG Scheduler optimizes the plan, combining stages where       │
-│       possible and minimizing shuffles.                                  │
-│     • Benefits: avoids unnecessary computation, enables whole-stage      │
-│       code generation, and allows predicate pushdown optimisation.       │
-│                                                                          │
-│  TRANSFORMATIONS VS ACTIONS                                              │
-│     Narrow Transformations  : map, filter, select (no shuffle)           │
-│     Wide Transformations    : groupBy, join, repartition (shuffle)       │
-│     Actions                 : show, count, collect, write                │
-│                                                                          │
-└──────────────────────────────────────────────────────────────────────────┘
-"""
-print(architecture_notes)
-
-
-# ╔═══════════════════════════════════════════════════════════════════════════╗
-# ║  SECTION B — READING DATA WITH SCHEMA HANDLING                         ║
+# ║  SECTION A — READING DATA WITH SCHEMA HANDLING                         ║
 # ╚═══════════════════════════════════════════════════════════════════════════╝
 print("=" * 80)
-print("STEP 2: Reading CSV data with explicit schema")
+print("STEP 1: Reading CSV data with explicit schema")
 print("=" * 80)
 
-# --- 2a. Define explicit schema (best practice for production) ---------------
+# --- 1a. Define explicit schema (best practice for production) ---------------
 employee_schema = StructType([
     StructField("emp_id", IntegerType(), False),
     StructField("name", StringType(), True),
@@ -119,7 +54,7 @@ OUTPUT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "output")
 
 csv_path = os.path.join(DATA_DIR, "employees.csv")
 
-# --- 2b. Read CSV with explicit schema --------------------------------------
+# --- 1b. Read CSV with explicit schema --------------------------------------
 df = spark.read.csv(
     csv_path,
     header=True,
@@ -139,7 +74,7 @@ df.show(10, truncate=False)
 
 
 # ╔═══════════════════════════════════════════════════════════════════════════╗
-# ║  SECTION C — LAZY EVALUATION DEMONSTRATION                             ║
+# ║  SECTION B — LAZY EVALUATION DEMONSTRATION                             ║
 # ╚═══════════════════════════════════════════════════════════════════════════╝
 print("\n" + "=" * 80)
 print("STEP 3: Demonstrating Lazy Evaluation")
@@ -168,19 +103,19 @@ eng_with_bonus.explain(True)
 
 
 # ╔═══════════════════════════════════════════════════════════════════════════╗
-# ║  SECTION D — FILTERING & COLUMN SELECTION                              ║
+# ║  SECTION C — FILTERING & COLUMN SELECTION                              ║
 # ╚═══════════════════════════════════════════════════════════════════════════╝
 print("\n" + "=" * 80)
 print("STEP 4: Filtering and Column Selection")
 print("=" * 80)
 
-# --- 4a. Single condition filter ─────────────────────────────────────────────
-print("\n── 4a. Employees with salary > 80,000 ──")
+# --- 3a. Single condition filter ─────────────────────────────────────────────
+print("\n── 3a. Employees with salary > 80,000 ──")
 high_salary_df = df.filter(col("salary") > 80000)
 high_salary_df.select("name", "department", "salary").show(truncate=False)
 
-# --- 4b. Multiple conditions ────────────────────────────────────────────────
-print("── 4b. Engineering employees in Mumbai or Pune with 5+ years experience ──")
+# --- 3b. Multiple conditions ────────────────────────────────────────────────
+print("── 3b. Engineering employees in Mumbai or Pune with 5+ years experience ──")
 filtered_df = df.filter(
     (col("department") == "Engineering") &
     (col("city").isin("Mumbai", "Pune")) &
@@ -188,40 +123,40 @@ filtered_df = df.filter(
 )
 filtered_df.select("name", "city", "experience_years", "salary").show(truncate=False)
 
-# --- 4c. Using SQL-style filtering ──────────────────────────────────────────
-print("── 4c. SQL-style filter: rating >= 4.5 ──")
+# --- 3c. Using SQL-style filtering ──────────────────────────────────────────
+print("── 3c. SQL-style filter: rating >= 4.5 ──")
 top_rated = df.filter("rating >= 4.5")
 top_rated.select("name", "department", "rating").show(truncate=False)
 
-# --- 4d. Selecting specific columns ─────────────────────────────────────────
-print("── 4d. Selecting specific columns ──")
+# --- 3d. Selecting specific columns ─────────────────────────────────────────
+print("── 3d. Selecting specific columns ──")
 subset_df = df.select("emp_id", "name", "department", "salary")
 subset_df.show(5, truncate=False)
 
 
 # ╔═══════════════════════════════════════════════════════════════════════════╗
-# ║  SECTION E — MODIFYING DATAFRAMES                                      ║
+# ║  SECTION D — MODIFYING DATAFRAMES                                      ║
 # ╚═══════════════════════════════════════════════════════════════════════════╝
 print("\n" + "=" * 80)
 print("STEP 5: Modifying DataFrames (rename, cast, add columns)")
 print("=" * 80)
 
-# --- 5a. Rename columns ─────────────────────────────────────────────────────
-print("\n── 5a. Renaming columns ──")
+# --- 4a. Rename columns ─────────────────────────────────────────────────────
+print("\n── 4a. Renaming columns ──")
 renamed_df = df.withColumnRenamed("name", "employee_name") \
                .withColumnRenamed("city", "work_location")
 renamed_df.select("emp_id", "employee_name", "work_location").show(5, truncate=False)
 
-# --- 5b. Cast data types ────────────────────────────────────────────────────
-print("── 5b. Casting joining_date from String → Date ──")
+# --- 4b. Cast data types ────────────────────────────────────────────────────
+print("── 4b. Casting joining_date from String → Date ──")
 from pyspark.sql.functions import to_date
 
 casted_df = df.withColumn("joining_date", to_date(col("joining_date"), "yyyy-MM-dd"))
 casted_df.printSchema()
 casted_df.select("name", "joining_date").show(5, truncate=False)
 
-# --- 5c. Add new computed columns ────────────────────────────────────────────
-print("── 5c. Adding computed columns ──")
+# --- 4c. Add new computed columns ────────────────────────────────────────────
+print("── 4c. Adding computed columns ──")
 enriched_df = casted_df \
     .withColumn("annual_bonus",
                 spark_round(col("salary") * 0.15, 2)) \
@@ -240,14 +175,14 @@ enriched_df.select(
 
 
 # ╔═══════════════════════════════════════════════════════════════════════════╗
-# ║  SECTION F — HANDLING NULL VALUES                                       ║
+# ║  SECTION E — HANDLING NULL VALUES                                       ║
 # ╚═══════════════════════════════════════════════════════════════════════════╝
 print("\n" + "=" * 80)
 print("STEP 6: Handling Null Values")
 print("=" * 80)
 
-# --- 6a. Identify nulls ─────────────────────────────────────────────────────
-print("\n── 6a. Null count per column ──")
+# --- 5a. Identify nulls ─────────────────────────────────────────────────────
+print("\n── 5a. Null count per column ──")
 from pyspark.sql.functions import sum as spark_sum_fn
 
 null_counts = df.select([
@@ -255,12 +190,12 @@ null_counts = df.select([
 ])
 null_counts.show(truncate=False)
 
-# --- 6b. Filter rows with null salary ───────────────────────────────────────
-print("── 6b. Rows with NULL salary ──")
+# --- 5b. Filter rows with null salary ───────────────────────────────────────
+print("── 5b. Rows with NULL salary ──")
 df.filter(col("salary").isNull()).show(truncate=False)
 
-# --- 6c. Fill nulls with defaults ───────────────────────────────────────────
-print("── 6c. Filling nulls (salary → median, experience → 0, rating → 3.0) ──")
+# --- 5c. Fill nulls with defaults ───────────────────────────────────────────
+print("── 5c. Filling nulls (salary → median, experience → 0, rating → 3.0) ──")
 # Calculate median salary for imputation
 median_salary = df.approxQuantile("salary", [0.5], 0.01)[0]
 print(f"   Median salary for imputation: {median_salary}")
@@ -278,57 +213,19 @@ filled_df.filter(
     (col("name") == "Sanjay Tiwari")
 ).show(truncate=False)
 
-# --- 6d. Drop rows with any null ────────────────────────────────────────────
-print("── 6d. Dropping rows with ANY null ──")
+# --- 5d. Drop rows with any null ────────────────────────────────────────────
+print("── 5d. Dropping rows with ANY null ──")
 clean_df = df.dropna()
 print(f"   Rows before: {df.count()}, Rows after dropna: {clean_df.count()}")
 
 
 # ╔═══════════════════════════════════════════════════════════════════════════╗
-# ║  SECTION G — WIDE TRANSFORMATIONS & PERFORMANCE                        ║
-# ╚═══════════════════════════════════════════════════════════════════════════╝
-print("\n" + "=" * 80)
-print("STEP 7: Wide Transformations, Shuffle & Performance Concepts")
+# ║  SECTION F — WIDE TRANSFORMATIONS & PERFORMANCE                        ║
+# ╚═══════════════════════
 print("=" * 80)
 
-performance_notes = """
-┌──────────────────────────────────────────────────────────────────────────┐
-│                     PERFORMANCE CONCEPTS                                │
-├──────────────────────────────────────────────────────────────────────────┤
-│                                                                          │
-│  NARROW vs WIDE TRANSFORMATIONS                                          │
-│  ─────────────────────────────────────────────────────────────────────    │
-│  Narrow : Each input partition contributes to ONE output partition.       │
-│           Examples: select, filter, map, withColumn                      │
-│           ✅ No data movement across partitions (fast)                   │
-│                                                                          │
-│  Wide   : Input partitions contribute to MULTIPLE output partitions.     │
-│           Examples: groupBy, join, repartition, orderBy                  │
-│           ⚠️  Requires SHUFFLE — data is redistributed across nodes.     │
-│           Shuffle is the most expensive operation in Spark.              │
-│                                                                          │
-│  SHUFFLE                                                                 │
-│  ─────────────────────────────────────────────────────────────────────    │
-│  • Data is serialized, written to disk, sent over the network, and       │
-│    deserialized — very costly in terms of I/O and network.               │
-│  • Minimise shuffles by: using broadcast joins for small tables,         │
-│    pre-partitioning data, and reducing the number of groupBy operations. │
-│  • spark.sql.shuffle.partitions controls the number of output partitions │
-│    after a shuffle (default=200, reduced to 4 for this local demo).      │
-│                                                                          │
-│  PREDICATE PUSHDOWN                                                      │
-│  ─────────────────────────────────────────────────────────────────────    │
-│  • Spark pushes filter conditions down to the data source layer.         │
-│  • With Parquet (columnar format), only relevant row groups and          │
-│    columns are read from disk → significant I/O savings.                 │
-│  • CSV does not support predicate pushdown — all data must be read.      │
-│                                                                          │
-└──────────────────────────────────────────────────────────────────────────┘
-"""
-print(performance_notes)
-
-# --- 7a. GroupBy — wide transformation (triggers shuffle) ───────────────────
-print("── 7a. Aggregation by Department (wide transformation → shuffle) ──")
+# --- 6a. GroupBy — wide transformation (triggers shuffle) ───────────────────
+print("── 6a. Aggregation by Department (wide transformation → shuffle) ──")
 dept_stats = filled_df.groupBy("department").agg(
     count("*").alias("employee_count"),
     spark_round(avg("salary"), 2).alias("avg_salary"),
@@ -339,8 +236,8 @@ dept_stats = filled_df.groupBy("department").agg(
 
 dept_stats.show(truncate=False)
 
-# --- 7b. Aggregation by City ────────────────────────────────────────────────
-print("── 7b. Aggregation by City ──")
+# --- 6b. Aggregation by City ────────────────────────────────────────────────
+print("── 6b. Aggregation by City ──")
 city_stats = filled_df.groupBy("city").agg(
     count("*").alias("headcount"),
     spark_round(avg("salary"), 2).alias("avg_salary"),
@@ -351,7 +248,7 @@ city_stats.show(truncate=False)
 
 
 # ╔═══════════════════════════════════════════════════════════════════════════╗
-# ║  SECTION H — FILE FORMATS: CSV vs PARQUET                              ║
+# ║  SECTION G — FILE FORMATS: CSV vs PARQUET                              ║
 # ╚═══════════════════════════════════════════════════════════════════════════╝
 print("\n" + "=" * 80)
 print("STEP 8: File Formats — CSV vs Parquet (Performance Comparison)")
@@ -360,19 +257,19 @@ print("=" * 80)
 csv_output = os.path.join(OUTPUT_DIR, "employees_csv")
 parquet_output = os.path.join(OUTPUT_DIR, "employees_parquet")
 
-# --- 8a. Write to CSV ───────────────────────────────────────────────────────
+# --- 7a. Write to CSV ───────────────────────────────────────────────────────
 start = time.time()
 filled_df.write.mode("overwrite").option("header", True).csv(csv_output)
 csv_write_time = time.time() - start
 print(f"\n✔ Written to CSV    : {csv_output}  ({csv_write_time:.4f}s)")
 
-# --- 8b. Write to Parquet ───────────────────────────────────────────────────
+# --- 7b. Write to Parquet ───────────────────────────────────────────────────
 start = time.time()
 filled_df.write.mode("overwrite").parquet(parquet_output)
 parquet_write_time = time.time() - start
 print(f"✔ Written to Parquet: {parquet_output}  ({parquet_write_time:.4f}s)")
 
-# --- 8c. Read back and compare ──────────────────────────────────────────────
+# --- 7c. Read back and compare ──────────────────────────────────────────────
 start = time.time()
 csv_read_df = spark.read.csv(csv_output, header=True, inferSchema=True)
 csv_read_time = time.time() - start
@@ -392,35 +289,8 @@ def get_dir_size(path):
 csv_size = get_dir_size(csv_output)
 parquet_size = get_dir_size(parquet_output)
 
-format_comparison = f"""
-┌────────────────────────────────────────────────────────────┐
-│           CSV vs PARQUET — Performance Comparison           │
-├──────────────┬──────────────────┬──────────────────────────┤
-│  Metric      │  CSV             │  Parquet                 │
-├──────────────┼──────────────────┼──────────────────────────┤
-│  Write Time  │  {csv_write_time:.4f}s          │  {parquet_write_time:.4f}s                │
-│  Read Time   │  {csv_read_time:.4f}s          │  {parquet_read_time:.4f}s                │
-│  File Size   │  {csv_size:.1f} KB          │  {parquet_size:.1f} KB                │
-├──────────────┴──────────────────┴──────────────────────────┤
-│                                                            │
-│  KEY INSIGHTS:                                             │
-│  • Parquet is a columnar format — much more compact due    │
-│    to efficient encoding and compression.                  │
-│  • Parquet supports predicate pushdown: Spark reads only   │
-│    required columns and row groups → faster queries.       │
-│  • CSV is row-based and human-readable, but larger and     │
-│    slower for analytical workloads.                        │
-│  • Parquet preserves schema (data types), while CSV        │
-│    requires schema inference or explicit specification.    │
-│  • For large-scale data pipelines, Parquet is the          │
-│    RECOMMENDED format.                                     │
-│                                                            │
-└────────────────────────────────────────────────────────────┘
-"""
-print(format_comparison)
-
-# --- 8d. Demonstrate predicate pushdown with Parquet ─────────────────────────
-print("── 8d. Predicate Pushdown Demo (Parquet) ──")
+# --- 7d. Demonstrate predicate pushdown with Parquet ─────────────────────────
+print("── 7d. Predicate Pushdown Demo (Parquet) ──")
 print("   Filtering directly from Parquet — Spark pushes the filter to the reader:\n")
 parquet_filtered = spark.read.parquet(parquet_output) \
     .filter(col("department") == "Engineering") \
@@ -430,7 +300,7 @@ parquet_filtered.show(truncate=False)
 
 
 # ╔═══════════════════════════════════════════════════════════════════════════╗
-# ║  SECTION I — COMPLETE DATA PIPELINE: READ → TRANSFORM → FILTER → WRITE ║
+# ║  SECTION H — COMPLETE DATA PIPELINE: READ → TRANSFORM → FILTER → WRITE ║
 # ╚═══════════════════════════════════════════════════════════════════════════╝
 print("\n" + "=" * 80)
 print("STEP 9: Complete Data Pipeline (Read → Transform → Filter → Write)")
@@ -493,64 +363,7 @@ print(f"Total records in pipeline output: {pipeline_df.count()}")
 
 
 # ╔═══════════════════════════════════════════════════════════════════════════╗
-# ║  SECTION J — BEST PRACTICES FOR LARGE DATASETS                         ║
-# ╚═══════════════════════════════════════════════════════════════════════════╝
-print("\n" + "=" * 80)
-print("STEP 10: Best Practices for Large Datasets")
-print("=" * 80)
-
-best_practices = """
-┌──────────────────────────────────────────────────────────────────────────┐
-│              BEST PRACTICES FOR LARGE-SCALE DATA PROCESSING             │
-├──────────────────────────────────────────────────────────────────────────┤
-│                                                                          │
-│  1. AVOID collect() on large datasets                                    │
-│     • collect() pulls ALL data to the Driver — can cause OOM errors.     │
-│     • Use show(n) or take(n) to preview a subset.                        │
-│     • Use write() to persist results instead of collecting.              │
-│                                                                          │
-│  2. USE PARQUET over CSV                                                 │
-│     • Columnar, compressed, schema-preserving.                           │
-│     • Supports predicate pushdown and column pruning.                    │
-│                                                                          │
-│  3. DEFINE SCHEMAS EXPLICITLY                                            │
-│     • Avoid inferSchema=True for large files — it requires an extra      │
-│       pass over the data.                                                │
-│     • Define StructType schemas for predictable, faster reads.           │
-│                                                                          │
-│  4. PARTITION YOUR DATA wisely                                           │
-│     • Use partitionBy("column") when writing to enable partition          │
-│       pruning on reads.                                                  │
-│     • Adjust spark.sql.shuffle.partitions based on data volume.          │
-│                                                                          │
-│  5. MINIMISE SHUFFLES                                                    │
-│     • Reduce wide transformations (groupBy, join).                       │
-│     • Use broadcast joins for small lookup tables.                       │
-│     • Cache/persist intermediate DataFrames that are reused.             │
-│                                                                          │
-│  6. LEVERAGE CATALYST OPTIMIZER                                          │
-│     • Use DataFrame/Dataset API over RDDs — Catalyst can optimise.       │
-│     • Chain transformations to let Spark build an efficient plan.        │
-│                                                                          │
-│  7. MONITOR with Spark UI                                                │
-│     • Default at http://localhost:4040 during execution.                  │
-│     • Inspect stages, tasks, shuffle read/write, and storage.            │
-│                                                                          │
-└──────────────────────────────────────────────────────────────────────────┘
-"""
-print(best_practices)
-
-# --- Demonstrating show() vs collect() ──────────────────────────────────────
-print("── Demo: show() vs collect() ──")
-print("✅ Using show(5) — safe for large datasets, returns nothing to Driver:")
-pipeline_df.show(5, truncate=False)
-
-print("⚠️  Using collect() — brings ALL data to Driver (avoid for large data):")
-print(f"   collect() returns {len(pipeline_df.collect())} rows as Python list (OK for 30 rows, dangerous for millions)\n")
-
-
-# ╔═══════════════════════════════════════════════════════════════════════════╗
-# ║  SECTION K — PARTITIONED WRITE (BONUS)                                  ║
+# ║  SECTION I — PARTITIONED WRITE (BONUS)                                  ║
 # ╚═══════════════════════════════════════════════════════════════════════════╝
 print("=" * 80)
 print("BONUS: Writing Partitioned Parquet by Department")

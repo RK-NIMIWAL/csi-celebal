@@ -1,8 +1,4 @@
 # Assignment 6 — Apache Spark: Architecture & Efficient Data Processing
-
-**Author:** Junior Data Engineer Intern  
-**Date:** June 2026  
-
 ---
 
 ## Table of Contents
